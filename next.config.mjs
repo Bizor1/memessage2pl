@@ -42,14 +42,14 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value: [
-              "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.shopify.com https://*.shopify.com",
-              "style-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.shopify.com https://*.shopify.com",
-              "img-src 'self' data: https: http:",
-              "media-src 'self' https://res.cloudinary.com",
-              "font-src 'self' data:",
-              "connect-src 'self' https://cdn.shopify.com https://*.shopify.com https://worldelegantkp.com https://res.cloudinary.com",
-              "frame-src 'self' https://cdn.shopify.com https://*.shopify.com",
+              "default-src 'self' https: http: data: blob: 'unsafe-inline' 'unsafe-eval'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https: http: blob:",
+              "style-src 'self' 'unsafe-inline' 'unsafe-eval' https: http: blob:",
+              "img-src 'self' data: https: http: blob:",
+              "media-src 'self' data: https: http: blob:",
+              "font-src 'self' data: https: http: blob:",
+              "connect-src 'self' data: https: http: blob:",
+              "frame-src 'self' data: https: http: blob:",
             ].join("; "),
           },
           {
@@ -63,10 +63,6 @@ const nextConfig = {
           {
             key: "Referrer-Policy",
             value: "origin-when-cross-origin",
-          },
-          {
-            key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=()",
           },
         ],
       },

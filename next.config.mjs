@@ -43,8 +43,8 @@ const nextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.shopify.com",
-              "style-src 'self' 'unsafe-inline' https://cdn.shopify.com",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.shopify.com https://*.shopify.com",
+              "style-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.shopify.com https://*.shopify.com",
               "img-src 'self' data: https: http:",
               "media-src 'self' https://res.cloudinary.com",
               "font-src 'self' data:",

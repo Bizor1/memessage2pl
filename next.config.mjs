@@ -34,40 +34,6 @@ const nextConfig = {
       },
     ],
   },
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "Content-Security-Policy",
-            value: [
-              "default-src 'self' https: http: data: blob: 'unsafe-inline' 'unsafe-eval'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https: http: blob:",
-              "style-src 'self' 'unsafe-inline' 'unsafe-eval' https: http: blob:",
-              "img-src 'self' data: https: http: blob:",
-              "media-src 'self' data: https: http: blob:",
-              "font-src 'self' data: https: http: blob:",
-              "connect-src 'self' data: https: http: blob:",
-              "frame-src 'self' data: https: http: blob:",
-            ].join("; "),
-          },
-          {
-            key: "X-Frame-Options",
-            value: "DENY",
-          },
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "origin-when-cross-origin",
-          },
-        ],
-      },
-    ];
-  },
 };
 
 export default nextConfig;

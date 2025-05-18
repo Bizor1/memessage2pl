@@ -15,7 +15,7 @@ import { FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "swap",
+  display: "optional",
 });
 
 export const metadata: Metadata = {

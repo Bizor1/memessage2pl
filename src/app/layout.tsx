@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicons/favicon.jpeg', type: 'image/jpeg' }
+      { url: '/favicons/favicon.jpeg', type: 'image/jpeg', sizes: '32x32' }
     ]
   },
   openGraph: {
@@ -55,8 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <link rel="icon" type="image/png" href="/favicons/favicon.png" sizes="32x32" />
-        {/* The problematic style block is removed */}
+        {/* Remove the redundant favicon link tag since it's handled by metadata */}
       </head>
       <body>
         <Providers>

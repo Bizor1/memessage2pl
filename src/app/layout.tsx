@@ -22,12 +22,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mymessage-theta.vercel.app'),
   title: "MYMESSAGE | Fashion Brand",
   description: "Premium fashion brand for the modern individual.",
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicons/favicon.jpeg', type: 'image/jpeg', sizes: '32x32' }
-    ]
-  },
   openGraph: {
     title: "MYMESSAGE | Fashion Brand",
     description: "Premium fashion brand for the modern individual.",

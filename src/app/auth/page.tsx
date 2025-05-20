@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { CldImage } from 'next-cloudinary';
 import { useAuth } from '@/context/AuthContext';
 import { redirectToShopifyAuth } from '@/lib/auth';
 import { useRouter } from 'next/navigation';
@@ -86,8 +85,8 @@ export default function AuthPage() {
                 <div className="max-w-md mx-auto">
                     <div className="text-center mb-8">
                         <Link href="/">
-                            <CldImage
-                                src="mymessage/images/logo"
+                            <Image
+                                src="/images/IMG_7559.jpg"
                                 alt="MYMESSAGE"
                                 width={120}
                                 height={40}

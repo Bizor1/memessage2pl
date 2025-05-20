@@ -64,9 +64,9 @@ export default function Header() {
     const headerBgClass = useSolidStyle ? "bg-white" : "bg-transparent";
     const logoTextColor = useSolidStyle ? "text-black" : "text-white";
 
-    const imageSrc = hoveredCategory === 'men'
-        ? 'https://res.cloudinary.com/duhfv8nqy/image/upload/v1747325553/mymessage/images/WhatsApp%20Image%202025-05-14%20at%2012.29.28%20PM.jpg'
-        : 'https://res.cloudinary.com/duhfv8nqy/image/upload/v1747325322/mymessage/images/1.jpg';
+    const imageSrc = hoveredCategory === 'Under His Shelter'
+        ? '/images/IMG_7559.jpg'
+        : '/images/IMG_7559.jpg';
     const blurOverlayLeft = "left-[40rem]";
 
     return (

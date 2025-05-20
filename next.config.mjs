@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "standalone",
   env: {
     NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN:
       process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN,
@@ -19,6 +20,8 @@ const nextConfig = {
       process.env.NEXT_PUBLIC_SHOPIFY_CUSTOMER_ACCOUNT_API_URL,
   },
   images: {
+    domains: ["worldelegantkp.com", "cdn.shopify.com", "res.cloudinary.com"],
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -34,6 +37,8 @@ const nextConfig = {
       },
     ],
   },
+  // Ensure static assets are copied to the output directory
+  assetPrefix: process.env.NODE_ENV === "production" ? "/_next" : "",
 };
 
 export default nextConfig;

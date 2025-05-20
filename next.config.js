@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
+  poweredByHeader: false,
+  reactStrictMode: true,
+  swcMinify: true,
   env: {
     NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN:
       process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN,
@@ -39,6 +42,11 @@ const nextConfig = {
   },
   // Ensure static assets are copied to the output directory
   assetPrefix: process.env.NODE_ENV === "production" ? "/_next" : "",
+  // Configure static file serving
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ["framer-motion"],
+  },
 };
 
 module.exports = nextConfig;

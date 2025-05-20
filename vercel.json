@@ -1,12 +1,6 @@
 {
   "version": 2,
   "buildCommand": "next build",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
   "headers": [
     {
       "source": "/images/(.*)",
@@ -18,15 +12,10 @@
       ]
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/images/(.*)",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" },
-      "dest": "/images/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/images/(.*)",
+      "destination": "/images/$1"
     }
   ]
 } 

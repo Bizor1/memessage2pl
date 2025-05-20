@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 // Dove SVG component
@@ -99,8 +99,8 @@ export default function StoryPage() {
             <section className="h-screen relative flex items-center justify-center">
                 <div className="absolute inset-0">
                     <CurtainReveal>
-                        <CldImage
-                            src="https://res.cloudinary.com/duhfv8nqy/image/upload/v1747325319/mymessage/favicons/favicon.jpg"
+                        <Image
+                            src="/images/IMG_7559.jpg"
                             alt="Brand Story Hero"
                             fill
                             className="object-cover"
@@ -159,7 +159,7 @@ export default function StoryPage() {
                         </div>
                         <div className="relative h-[600px] md:h-[800px]">
                             <CurtainReveal>
-                                <CldImage
+                                <Image
                                     src="https://res.cloudinary.com/duhfv8nqy/image/upload/v1747347372/WhatsApp_Image_2025-05-15_at_7.03.41_PM_w3wdak.jpg"
                                     alt="Psalm 91 Long Sleeve"
                                     fill
@@ -190,7 +190,7 @@ export default function StoryPage() {
                     >
                         <div className="relative h-[600px] md:h-[800px] md:order-2">
                             <CurtainReveal>
-                                <CldImage
+                                <Image
                                     src="https://res.cloudinary.com/duhfv8nqy/image/upload/v1747347405/WhatsApp_Image_2025-05-15_at_7.03.41_PM_1_g4te0u.jpg"
                                     alt="Faith Fueled Fashion"
                                     fill

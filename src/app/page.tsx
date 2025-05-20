@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import { CldImage } from 'next-cloudinary';
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,9 +10,9 @@ export default function Home() {
       <section className="relative w-full h-screen">
         {/* Hero image */}
         <div className="absolute inset-0">
-          <CldImage
-            src="mymessage/images/WhatsApp Image 2025-05-14 at 12.29.28 PM (2)"
-            alt="Giant sneaker in cityscape"
+          <Image
+            src="/images/IMG_7559.jpg"
+            alt="MYMESSAGE Hero Image"
             fill
             className="object-cover"
             sizes="100vw"
@@ -41,9 +41,9 @@ export default function Home() {
       {/* Full-height fashion image section */}
       <section className="relative w-full h-screen overflow-hidden">
         <div className="absolute inset-0">
-          <CldImage
-            src="mymessage/images/WhatsApp Image 2025-05-14 at 12.29.26 PM (1)"
-            alt="Fashion model with blinds"
+          <Image
+            src="/images/IMG_7559.jpg"
+            alt="MYMESSAGE Fashion Image"
             fill
             className="object-cover object-center"
             sizes="100vw"

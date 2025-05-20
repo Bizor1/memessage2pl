@@ -6,7 +6,7 @@ export default function AboutPage() {
             {/* Hero Section */}
             <div className="relative h-[60vh] w-full">
                 <Image
-                    src="https://res.cloudinary.com/duhfv8nqy/image/upload/v1747325319/mymessage/favicons/favicon.jpg"
+                    src="/images/IMG_7559.jpg"
                     alt="MYMESSAGE brand story"
                     fill
                     className="object-cover"

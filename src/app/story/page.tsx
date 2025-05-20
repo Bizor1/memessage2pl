@@ -160,7 +160,7 @@ export default function StoryPage() {
                         <div className="relative h-[600px] md:h-[800px]">
                             <CurtainReveal>
                                 <Image
-                                    src="https://res.cloudinary.com/duhfv8nqy/image/upload/v1747347372/WhatsApp_Image_2025-05-15_at_7.03.41_PM_w3wdak.jpg"
+                                    src="/images/IMG_7559.jpg"
                                     alt="Psalm 91 Long Sleeve"
                                     fill
                                     className="object-cover rounded-lg"
@@ -191,7 +191,7 @@ export default function StoryPage() {
                         <div className="relative h-[600px] md:h-[800px] md:order-2">
                             <CurtainReveal>
                                 <Image
-                                    src="https://res.cloudinary.com/duhfv8nqy/image/upload/v1747347405/WhatsApp_Image_2025-05-15_at_7.03.41_PM_1_g4te0u.jpg"
+                                    src="/images/IMG_7559.jpg"
                                     alt="Faith Fueled Fashion"
                                     fill
                                     className="object-cover rounded-lg"

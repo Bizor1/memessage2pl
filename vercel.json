@@ -1,15 +1,28 @@
 {
   "version": 2,
+  "buildCommand": "next build",
   "builds": [
     {
-      "src": "next.config.mjs",
+      "src": "package.json",
       "use": "@vercel/next"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ],
   "routes": [
     {
       "src": "/images/(.*)",
-      "dest": "/public/images/$1"
+      "headers": { "cache-control": "public, max-age=31536000, immutable" },
+      "dest": "/images/$1"
     },
     {
       "src": "/(.*)",

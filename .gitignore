@@ -47,7 +47,6 @@ next-env.d.ts
 *.avi
 *.wmv
 *.flv
-*.jpg
 *.jpeg
 *.png
 *.gif

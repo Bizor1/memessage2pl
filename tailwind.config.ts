@@ -8,6 +8,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/context/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/hooks/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}"
+  ],
+  safelist: [
+    'bg-white',
+    'text-black',
+    'hover:text-black',
+    'text-gray-400',
+    'text-gray-500',
+    'text-gray-600',
+    'cursor-not-allowed'
   ],
   theme: {
     extend: {
